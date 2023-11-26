@@ -6,3 +6,5 @@ bricks:
     path: ./login_with_state/
   login_with_bloc:
     path: ./login_with_bloc/
+  android_fastlane_config:
+    path: ./android_fastlane_config/
