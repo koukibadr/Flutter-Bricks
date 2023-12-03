@@ -26,8 +26,8 @@ environment:
 #  * a list of values (enums only)
 #  * an optional separator (list only)
 vars:
-  name:
+  button_widget_name:
     type: string
-    description: Your name
-    default: Dash
-    prompt: What is your name?
+    description: Button widget file and widget name
+    default: AppButtonWidget
+    prompt: What is the button widget will be called?

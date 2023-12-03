@@ -8,3 +8,5 @@ bricks:
     path: ./login_with_bloc/
   android_fastlane_config:
     path: ./android_fastlane_config/
+  primitive_widgets:
+    path: ./primitive_widgets/
