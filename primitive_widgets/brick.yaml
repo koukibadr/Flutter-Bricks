@@ -31,3 +31,8 @@ vars:
     description: Button widget file and widget name
     default: AppButtonWidget
     prompt: What is the button widget will be called?
+  text_field_widget_name:
+    type: string
+    description: TextField widget file and widget name
+    default: AppTextFieldWidget
+    prompt: What is the TextField widget will be called?
