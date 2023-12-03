@@ -26,8 +26,7 @@ environment:
 #  * a list of values (enums only)
 #  * an optional separator (list only)
 vars:
-  name:
+  jira_project:
     type: string
-    description: Your name
-    default: Dash
-    prompt: What is your name?
+    description: Jira project abbreviation
+    prompt: What is your jira project abbreviation?

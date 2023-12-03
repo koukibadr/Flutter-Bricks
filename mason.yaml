@@ -10,3 +10,5 @@ bricks:
     path: ./android_fastlane_config/
   primitive_widgets:
     path: ./primitive_widgets/
+  git_hooks_setup:
+    path: ./git_hooks_setup/

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+INPUT_FILE=$1
+START_LINE=$(head -n1 "$INPUT_FILE")
+MERGE_COMMIT_PATTERN="^Merge branch+"
+GITLAB_PATTERN="^(Fix|Feature) #[0-9]+: "
+SECOND_PATTERN="^(WIP): "
+
+message="\033[31mCannot commit changes.\033[0m\n"
+message+="Commit messages should follow this format example:\n"
+message+="- $GITLAB_PATTERN\n- $SECOND_PATTERN\n"
+message+="Examples:"
+message+="\033[32m-Fix #9: Update user creation process (For gitlab issue)\033[0m\n"
+message+="\033[32m-WIP: user creation process (For Work in progress)\033[0m \n"
+
+if ! [[ "$START_LINE" =~ $GITLAB_PATTERN ]] && ! [[ "$START_LINE" =~ $SECOND_PATTERN ]] && ! [[ "$START_LINE" =~ $MERGE_COMMIT_PATTERN ]]; then
+  echo -e "$message"
+  exit 1
+fi
+exit 0
