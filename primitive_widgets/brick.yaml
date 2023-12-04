@@ -36,3 +36,8 @@ vars:
     description: TextField widget file and widget name
     default: AppTextFieldWidget
     prompt: What is the TextField widget will be called?
+  checkbox_widget_name:
+    type: string
+    description: checkbox widget file and widget name
+    default: AppCheckBoxWiget
+    prompt: What is the checkbox widget will be called?
