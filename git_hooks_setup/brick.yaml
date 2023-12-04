@@ -25,8 +25,3 @@ environment:
 #  * an optional prompt phrase used when asking for the variable
 #  * a list of values (enums only)
 #  * an optional separator (list only)
-vars:
-  jira_project:
-    type: string
-    description: Jira project abbreviation
-    prompt: What is your jira project abbreviation?
