@@ -12,3 +12,5 @@ bricks:
     path: ./primitive_widgets/
   git_hooks_setup:
     path: ./git_hooks_setup/
+  signup_with_bloc:
+    path: ./signup_with_bloc/
